@@ -8,3 +8,12 @@ def fibo(N):
 
 if __name__=="__main__":
 	print("fibo(5)", fibo(5))
+
+def fibo2(N):
+	a = 0
+	b = 1
+	for i in range(N):
+		bnew = a + b
+		a = b
+		b = bnew
+	return b
